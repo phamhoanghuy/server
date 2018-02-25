@@ -17,12 +17,11 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
 Route::group(['middleware' => 'guest:web'], function () {
     Route::group(['prefix' => 'admin'], function () {
         Route::get('/login', 'Auth\LoginController@login')->name('login');
         Route::get('/register', 'Auth\LoginController@register')->name('register');
+        Route::get('/home', 'HomeController@index')->name('home');
     });
 });
 Auth::routes();
