@@ -20,8 +20,12 @@ Auth::routes();
 Route::group(['middleware' => 'guest:web'], function () {
     Route::group(['prefix' => 'admin'], function () {
         Route::get('/login', 'Auth\LoginController@login')->name('login');
+        Route::post('/login', 'Auth\LoginController@submitLogin')->name('login.submit');
+
         Route::get('/register', 'Auth\LoginController@register')->name('register');
         Route::get('/home', 'HomeController@index')->name('home');
+
+        Route::post('admin/logout', 'Auth\LoginController@logout')->name('logout');
     });
 });
 Auth::routes();
