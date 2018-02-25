@@ -10,6 +10,23 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('global/plugins/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('global/plugins/simple-line-icons/simple-line-icons.min.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('global/plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('global/plugins/uniform/css/uniform.default.css') }}" rel="stylesheet" type="text/css"/>
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <link href="{{ asset('layout/css/login2.css') }}" rel="stylesheet" type="text/css"/>
+    <!-- END PAGE LEVEL SCRIPTS -->
+    <!-- BEGIN THEME STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('global/css/components.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('global/css/plugins.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('layout/css/layout.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('layout/css/themes/darkblue.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('layout/css/custom.css') }}" rel="stylesheet" type="text/css"/>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
